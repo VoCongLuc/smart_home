@@ -1,0 +1,52 @@
+#bat {
+    background-color: green;
+}
+
+#tat {
+    background-color: red;
+}
+
+/* .ToTal {
+	display: flex;
+} */
+
+.content_wrapper {
+    display: flex;
+    height: 100vh;
+}
+
+.content_right {
+    flex-grow: 1;
+}
+
+.sidebar {
+    height: 100%;
+}
+
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* .sidebar-brand {
+
+} */
+
+.img{
+	width: 50%;
+    height: 50%;
+  
+}
+.phong{
+	width: 15%;
+    height: 20%;
+   
+}
+.luc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+   
+}

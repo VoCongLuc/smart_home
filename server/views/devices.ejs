@@ -1,0 +1,32 @@
+<div class="table-container">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% devices.forEach(function(device){ %>
+                <tr>
+                    <th scope="row">
+                        <%= device.id %>
+                    </th>
+                    <td>
+                        <%= device.name %>
+                    </td>
+
+                    <td>
+                        <% if (device.status){ %>
+                            <span class="badge text-bg-primary">Bat</span>
+                        <% } else { %>
+                            <span class="badge text-bg-danger">Tat</span>
+                        <% } %>
+                    </td>
+                </tr>
+                <% }); %>
+
+        </tbody>
+    </table>
+</div>
