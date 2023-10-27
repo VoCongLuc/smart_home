@@ -85,7 +85,7 @@ app.get('/tatdenphongngu', (req, res)=> {
 
 app.post("/den", (req, res) => {
   console.log("Luc", req.luc)
-  console.log("Body:", req.body)
+  console.log("Body ", req.body)
   MQTT.publish("DEN", JSON.stringify(req.body))
   res.json(req.body)
 })
